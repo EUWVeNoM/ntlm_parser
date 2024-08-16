@@ -13,7 +13,7 @@
 - **Matching**: Finds and displays matches between NT hashes in both files, showing the corresponding User:Password pairs.
 - **Output Options**: Displays results on the console and optionally saves them to a specified output file.
 
-## Usage
+### Usage
 
 To run the script, use the following command:
 
@@ -21,7 +21,7 @@ To run the script, use the following command:
 ./ntds_parser.sh crack ntds.dit SYSTEM [-w specify_wordlist] [-r specify_rules] [-o output_file]
 ```
 
-## Parameters
+### Parameters
 
 - ntds.dit: Dump of the ntds.dit (Default location : C:\Windows\NTDS\Active Directory\ntds.dit)
 - SYSTEM: Dump of the SYSTEM file (Default location : C:\Windows\NTDS\registry\SYSTEM)
@@ -36,7 +36,7 @@ To run the script, use the following command:
 - **Matching**: Finds and displays matches between NT hashes in both files, showing the corresponding User:Password pairs.
 - **Output Options**: Displays results on the console and optionally saves them to a specified output file.
 
-## Usage
+### Usage
 
 To run the script, use the following command:
 
@@ -44,13 +44,13 @@ To run the script, use the following command:
 ./ntds_parser.sh coerce ntds_dump hash_cracked [-o output_file]
 ```
 
-## Parameters
+### Parameters
 
 - ntds_dump: The NTDS file containing user data formatted as User:xxx:xxx:NT_hash:::.
 - hash_cracked: The file containing cracked NT hashes and passwords formatted as NT_hash:Password.
 - -o output_file: (Optional) Specifies the output file to save the matched results. If not provided, results are displayed only on the console.
 
-## Help
+### Help
 
 To display the help message, simply run the script without any arguments:
 
